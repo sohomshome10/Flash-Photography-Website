@@ -1,3 +1,7 @@
+window.onload = function(){
+  document.querySelector('.loader').style.display = 'none';
+  document.querySelector('body').classList.remove('no-scroll');
+};
 function typingEffect(){
     var typed = new Typed('.typing', {
         strings:["Photographer.","Travel Blogger.","Photo Artist."],
@@ -9,8 +13,18 @@ function typingEffect(){
         backDelay: 1000,
     });
 }
+$('.scroll').click(function(){
+  var getelem = $(this).attr('href');
+  var target = 70;
+  if($(getelem).length) {
+      var getoffset = $(getelem).offset().top;
+      $('html').animate({
+          scrollTop:getoffset - target
+      },600);
+  }
+  return false;
+});
 $(function(){
-    // Hamburger toggle.
     // Back to top button.
     $('body').append('<a href="#home" class="top scroll"><i class="fas fa-chevron-up"></i></a>');
     $(window).scroll(function(){
@@ -78,6 +92,5 @@ $(function(){
           }
         ]
       });
-
 
 });

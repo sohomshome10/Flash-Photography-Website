@@ -22,9 +22,26 @@ body {
   overflow-x: hidden;
   font-family: 'Josefin Sans', sans-serif !important;
 }
+.no-scroll{
+    overflow-y: hidden;
+}
 ul{
     list-style: none;
     margin-bottom: 0;
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(3);
+}
+.spin{
+    color: #793be8 !important;
 }
 #navbar{
     z-index: 55;
@@ -141,7 +158,7 @@ ul{
     height: 50px;
     background-color: #793be8;
     position: fixed;
-    z-index: 99999;
+    z-index: 70;
     right: 20px;
     bottom: 20px;
     text-decoration: none;

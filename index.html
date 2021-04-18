@@ -13,13 +13,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <link rel="icon" href="img/icon.png" type="image/x-icon" />
     </head>
-    <body>
+    <body class="no-scroll">
+        <div class="loader">
+            <div class="spinner-grow spin" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
         <div class="container-fluid" id="navbar">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">Photo</a>
+                            <a class="navbar-brand" href="#">Flash</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <!-- <span class="navbar-toggler-icon navbar-light bg-light"></span> -->
                               <span class="mb-0"><i class="fas fa-bars"></i></span>
@@ -28,28 +33,28 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Home</a>
+                                  <a class="nav-link scroll" href="#header">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">About</a>
+                                  <a class="nav-link scroll" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Service</a>
+                                    <a class="nav-link scroll" href="#service">Service</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link scroll" href="#">Project</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link scroll" href="#review">Review</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Project</a>
+                                    <a class="nav-link scroll" href="#team">Team</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Review</a>
+                                    <a class="nav-link scroll" href="#blog">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Team</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link scroll" href="#contact">Contact</a>
                                 </li>
                               </ul>
                             </div>
@@ -442,7 +447,7 @@
                <div class="row">
                    <div class="col-lg-3">
                         <div class="f1">
-                            <h2>Photo</h2>
+                            <h2>Flash</h2>
                             <p>Copyright © 2021 Designed by Cute Themes.</p>
                         </div>
                    </div>
